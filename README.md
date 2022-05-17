@@ -10,10 +10,10 @@
 <h4 align="center"> JOSE CHRISTIAN ROMERO HERNANDEZ.</h4>
 
 
-<h4 align="center"> Perez Mora Ana Ivonne </h4>
+<h4 align="center"> Perez Mora Ana Ivonne 18212074</h4>
 <h4 align="center"> Perez Ortega Victoria Valeria 18210718</h4>
 <h4 align="center"> Lopez Pablo Israel 17210585</h4>
-<h4 align="center"> CMadrigal Ramos Ulises Omar </h4>
+<h4 align="center"> Madrigal Ramos Ulises Omar 18210496</h4>
  
 
 
@@ -71,6 +71,29 @@ No hay óptimo local, como en las redes neuronales.
  https://youtu.be/_YPScrckx28
   
   https://youtu.be/kl6tyEi5eso
+
+<h1 align="Ejemplo"> Referencias </h1>  
+
+```scala
+// Linear Support Vector Machine
+
+// Import the "LinearSVC" library.
+import org.apache.spark.ml.classification.LinearSVC
+
+// Load training data
+val training  = spark.read.format("libsvm").load("C:/Spark/spark-2.4.8-bin-hadoop2.7/data/mllib/sample_libsvm_data.txt")
+
+//Set the maximum number of iterations and the regularization parameter 
+val lsvc = new LinearSVC().setMaxIter(10).setRegParam(0.1)
+
+
+// Fit the model
+val lsvcModel = lsvc.fit(training)
+
+// Print the coefficients and intercept for linear svc
+println(s"Coefficients: ${lsvcModel.coefficients} Intercept: ${lsvcModel.intercept}")
+
+```
 
 
 

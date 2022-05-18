@@ -72,7 +72,7 @@ No hay óptimo local, como en las redes neuronales.
   
   https://youtu.be/kl6tyEi5eso
 
-<h1 align="Ejemplo"> Referencias </h1>  
+<h1 align="center"> Ejemplo </h1>  
 
 ```scala
 // Linear Support Vector Machine
